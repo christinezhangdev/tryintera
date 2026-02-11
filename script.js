@@ -195,6 +195,8 @@
   });
   
   // Fade out and hide entire opener section when scrolling (only once)
+  const isMobileDevice = window.innerWidth < 768;
+  
   function handleScroll() {
     if (hasScrolledAway) return;
     
@@ -209,8 +211,20 @@
       isFadingOut = true;
       hasScrolledAway = true;
       
-      // Get current scroll position and opener height
-      const currentScroll = window.scrollY;
+      // On mobile, just hide immediately to avoid scroll issues
+      if (isMobileDevice) {
+        cancelAnimationFrame(animationId);
+        opener.style.transition = 'opacity 0.4s ease-out';
+        opener.style.opacity = '0';
+        setTimeout(() => {
+          opener.style.display = 'none';
+          window.scrollTo(0, 0);
+        }, 400);
+        window.removeEventListener('scroll', handleScroll);
+        return;
+      }
+      
+      // Desktop: Animate the collapse
       const openerHeight = opener.offsetHeight;
       
       // Fade out the entire opener section and collapse height
@@ -324,13 +338,16 @@ fiEls.forEach(el=>obs.observe(el));
   const heroText = document.querySelector('.hero-text');
   let ticking = false;
   
+  // Disable parallax on mobile for better performance
+  const isMobile = window.innerWidth < 768;
+  
   window.addEventListener('scroll', function() {
-    if (!ticking) {
+    if (!ticking && !isMobile) {
       requestAnimationFrame(function() {
         const scrollY = window.scrollY;
         const vh = window.innerHeight;
         
-        // Hero parallax — viz moves slower than text for depth
+        // Hero parallax — viz moves slower than text for depth (desktop only)
         if (heroViz && scrollY < vh * 1.5) {
           heroViz.style.transform = 'translateY(' + (scrollY * 0.04) + 'px)';
         }
