@@ -12,8 +12,10 @@
   --vmuted:#6e6e82;--vtext:#d4d4dc;--vdim:#8e8e9e
 }
 html{
+  font-size:16px;
   scroll-behavior:smooth;
   -webkit-text-size-adjust:100%;
+  text-size-adjust:100%;
   height:100%;
 }
 body{
@@ -281,8 +283,6 @@ body.hero-scale nav.nav-scale{
   width:100%;
   padding:0 48px;
   box-sizing:border-box;
-  transform:scale(1.2);
-  transform-origin:center center;
 }
 .hero-scale-left{
   display:flex;
@@ -995,26 +995,41 @@ https://www.unlearn.ai/.dct-grid-label{
   box-sizing:border-box;
 }
 .team-section-members{
-  background:#1a1535;
+  background:#f5f3f0;
   margin-top:0;
-  padding:40px 0 120px;
+  padding:56px 24px 80px;
+}
+.team-section-members .team-grid-title{
+  font-family:'DM Sans',sans-serif;
+  font-size:22px;
+  font-weight:600;
+  color:#1a1535;
+  text-align:center;
+  margin:0 0 40px;
 }
 .team-grid{
   display:grid;
-  grid-template-columns:repeat(4,1fr);
+  grid-template-columns:repeat(3,1fr);
   gap:24px;
+  max-width:720px;
+  margin:0 auto;
 }
 .team-member{
   display:flex;
   flex-direction:column;
+  background:#fff;
+  border-radius:12px;
+  padding:20px;
+  box-shadow:0 2px 12px rgba(26,21,53,0.06);
 }
 .team-photo-wrap{
-  width:88%;
-  margin:0 auto;
-  aspect-ratio:3/4;
-  min-height:520px;
+  width:100%;
+  max-width:160px;
+  margin:0 auto 16px;
+  aspect-ratio:1;
   overflow:hidden;
   position:relative;
+  border-radius:12px;
 }
 .team-photo{
   width:100%;
@@ -1069,37 +1084,34 @@ https://www.unlearn.ai/.dct-grid-label{
   text-decoration:underline;
 }
 .team-meta{
-  padding:20px 16px 40px;
+  padding:0;
+  text-align:center;
 }
 .team-name{
-  font-family:'Lora',serif;
-  font-size:24px;
-  font-weight:400;
-  color:#f0edf8;
-  margin:0 0 8px;
+  font-family:'DM Sans',sans-serif;
+  font-size:15px;
+  font-weight:600;
+  color:#1a1535;
+  margin:0 0 4px;
 }
 .team-title{
   font-family:'DM Sans',sans-serif;
-  font-size:18px;
-  text-transform:uppercase;
-  letter-spacing:0.13em;
-  color:#00BCD4;
-  margin:0 0 10px;
+  font-size:13px;
+  font-weight:400;
+  text-transform:none;
+  letter-spacing:0;
+  color:rgba(26,21,53,0.6);
+  margin:0;
 }
 .team-inst{
-  font-family:'DM Sans',sans-serif;
-  font-size:14px;
-  line-height:1.6;
-  color:#ffffff;
-  margin:0;
+  display:none;
 }
 
 .team-photo-pranav{
-  transform:scale(1.35);
-  object-position:center;
+  object-position:center 20%;
 }
 .team-photo-raman{
-  transform:scale(1.15);
+  object-position:center 25%;
 }
 
 .team-section-investors{
