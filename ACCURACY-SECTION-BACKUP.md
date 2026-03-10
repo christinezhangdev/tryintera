@@ -1,10 +1,10 @@
-# Accuracy section backup — "We prove our accuracy every day"
+# Accuracy section backup  - "We prove our accuracy every day"
 
 This section was removed from the live site for now. To restore it:
 
 1. **HTML**: Paste the block below into `index.html` between the Platform section `</section>` and the Use Cases section `<!-- USE CASES -->`. It has two parts: the main section and the KFF expanded article panel (slide-out).
 
-2. **CSS**: All styles are already in `styles.css` — search for `.accuracy-` to find them. No CSS was removed.
+2. **CSS**: All styles are already in `styles.css`  - search for `.accuracy-` to find them. No CSS was removed.
 
 3. **JS**: The accuracy panel open/close logic is in `script.js` (search for "Accuracy KFF card"). It already guards with `if (!panel || !kffCard) return;` so it no-ops when the section is absent; it will work again once you restore the HTML.
 
@@ -15,9 +15,9 @@ This section was removed from the live site for now. To restore it:
 - **Headline**: "We prove our accuracy every day."
 - **Layout**: `.accuracy-inner` with an h2 and `.accuracy-card-grid` (3 cards in a row on desktop, stacked on small screens).
 - **Cards**:
-  1. **KFF Health Tracking Poll** — HEALTH BEHAVIOR, 87.4%, expandable (opens article panel). Footer: "11 questions · n = 1,800 · February 2026"
-  2. **General Social Survey** — SOCIAL ATTITUDES, 91.2%, placeholder. Footer: "14 questions · n = 2,500 · February 2026"
-  3. **Michigan Consumer Sentiment** — CONSUMER SENTIMENT, 86.1%, placeholder. Footer: "8 questions · n = 600 · January 2026"
+  1. **KFF Health Tracking Poll**  - HEALTH BEHAVIOR, 87.4%, expandable (opens article panel). Footer: "11 questions · n = 1,800 · February 2026"
+  2. **General Social Survey**  - SOCIAL ATTITUDES, 91.2%, placeholder. Footer: "14 questions · n = 2,500 · February 2026"
+  3. **Michigan Consumer Sentiment**  - CONSUMER SENTIMENT, 86.1%, placeholder. Footer: "8 questions · n = 600 · January 2026"
 - **KFF article panel** (slide-out): Header with title and 87.4% stat; "Predicted vs. actual" bar chart (Intera predicted vs KFF actual); "Error distribution" chart; "Where we were strongest" / "Where we struggled" copy; methodology; "← Back to case studies" button. Close via ×, backdrop click, or Escape.
 
 ---
@@ -141,7 +141,7 @@ Insert this between `</section>` (end of Platform) and `<!-- USE CASES -->`:
       </div>
       <p class="accuracy-error-caption">Absolute error by question. Most within 0–3 pts.</p>
       <h2>Where we were strongest</h2>
-      <p>Insurance coverage satisfaction and prescription cost burden — both within 1–2 percentage points. These map directly to Consumer Expenditure Survey and MEPS data in our calibration stack.</p>
+      <p>Insurance coverage satisfaction and prescription cost burden  - both within 1–2 percentage points. These map directly to Consumer Expenditure Survey and MEPS data in our calibration stack.</p>
       <h2>Where we struggled</h2>
       <p>ACA favorability and policy-opinion questions showed wider gaps (2–4 pts). Political sentiment shifts faster than behavioral patterns; our calibration has less signal on opinion formation.</p>
       <div class="accuracy-methodology">

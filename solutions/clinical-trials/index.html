@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>Ensemble · Clinical Trials | Intera</title>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600;9..40,700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,500;8..60,600;8..60,700&family=JetBrains+Mono:wght@400;500&family=Lora:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+<link rel="icon" type="image/png" href="/favicon.png">
+<link rel="stylesheet" href="../../styles.css?v=4">
+</head>
+
+<body class="landing-ghibli hero-scale clinical-trials-light">
+<nav class="nav-scale nav-visible" id="main-nav">
+  <a href="/" class="nav-scale-logo">
+    <img src="../../images/logo-intera.png" alt="" width="auto" height="40">
+    <span class="nav-scale-wordmark">Intera</span>
+  </a>
+  <div class="nav-scale-center">
+    <div class="nav-scale-dd">
+      <a href="#" class="nav-scale-link nav-scale-link-active nav-scale-link-dd">Products &amp; Solutions <span class="nav-scale-chevron">↓</span></a>
+      <div class="nav-scale-dropdown">
+        <a href="/solutions/clinical-trials/" class="nav-scale-dropdown-item">Clinical Trials</a>
+        <a href="/solutions/dct/" class="nav-scale-dropdown-item">DCT</a>
+        <a href="/solutions/commercial-pharma/" class="nav-scale-dropdown-item">Commercial Pharma</a>
+      </div>
+    </div>
+    <div class="nav-scale-dd">
+      <a href="#" class="nav-scale-link nav-scale-link-dd">Resources <span class="nav-scale-chevron">↓</span></a>
+      <div class="nav-scale-dropdown">
+        <a href="/resources/methodology/" class="nav-scale-dropdown-item">Methodology</a>
+        <a href="/resources/ethics/" class="nav-scale-dropdown-item">Ethics</a>
+      </div>
+    </div>
+    <a href="/team/" class="nav-scale-link">Team</a>
+  </div>
+  <a href="/early-access/" class="nav-scale-cta" id="nav-cta-early-access">Request Early Access</a>
+  <button id="mobile-menu-btn" aria-label="Open menu">
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
+</nav>
+
+<div id="mobile-overlay">
+  <button id="mobile-close-btn">✕</button>
+  <div class="mobile-overlay-menu">
+    <a href="/">Home</a>
+    <a href="/solutions/clinical-trials/">Clinical Trials</a>
+    <a href="/solutions/commercial-pharma/">Commercial Pharma</a>
+    <a href="/solutions/dct/">Decentralized Trials</a>
+    <a href="/resources/methodology/">Methodology</a>
+    <a href="/resources/ethics/">Ethics</a>
+    <a href="/team/">Team</a>
+    <a href="/early-access/">Request Early Access</a>
+  </div>
+</div>
+
+<!-- SECTION 1  - HERO -->
+<section class="argus-hero" id="demo">
+  <div class="argus-hero-inner">
+    <p class="argus-eyebrow">ENSEMBLE · CLINICAL TRIALS</p>
+    <h1 class="argus-headline">
+      Predict who drops out.<br>
+      <span class="argus-headline-highlight">Before enrollment begins.</span>
+    </h1>
+    <p class="argus-body">Clinical trial attrition is not random. The behavioral profile of a patient who will disengage at week 8 is detectable before the first screening visit. Ensemble reads it.</p>
+    <a href="/early-access/" class="argus-cta">Request Early Access</a>
+  </div>
+</section>
+
+<!-- FOUR FAILURE POINTS  - VISUAL (4-column grid) -->
+<section class="argus-failure-visual" id="failure-points-visual">
+  <h2 class="argus-failure-visual-headline">Four failure points.<br>All modeled before the trial begins.</h2>
+  <div class="argus-failure-visual-grid">
+    <div class="argus-failure-visual-col">
+      <div class="argus-failure-visual-img-wrap">
+        <img src="../../images/failure-placebo.png" alt="" class="argus-failure-visual-img">
+      </div>
+      <div class="argus-failure-visual-text">
+        <span class="argus-failure-visual-label">Placebo Response Inflation</span>
+        <p class="argus-failure-visual-desc">Identifiable from behavioral profile before randomization.</p>
+      </div>
+    </div>
+    <div class="argus-failure-visual-col">
+      <div class="argus-failure-visual-img-wrap">
+        <img src="../../images/failure-dropout.png" alt="" class="argus-failure-visual-img">
+      </div>
+      <div class="argus-failure-visual-text">
+        <span class="argus-failure-visual-label">Pre-Rerandomization Dropout</span>
+        <p class="argus-failure-visual-desc">Detectable at baseline. Flagged before the window closes.</p>
+      </div>
+    </div>
+    <div class="argus-failure-visual-col">
+      <div class="argus-failure-visual-img-wrap">
+        <img src="../../images/failure-adherence.png" alt="" class="argus-failure-visual-img">
+      </div>
+      <div class="argus-failure-visual-text">
+        <span class="argus-failure-visual-label">Adherence Failure</span>
+        <p class="argus-failure-visual-desc">Predicted before it is observable. Intervened before it is irreversible.</p>
+      </div>
+    </div>
+    <div class="argus-failure-visual-col">
+      <div class="argus-failure-visual-img-wrap">
+        <img src="../../images/failure-screening.png" alt="" class="argus-failure-visual-img">
+      </div>
+      <div class="argus-failure-visual-text">
+        <span class="argus-failure-visual-label">Screening Bias</span>
+        <p class="argus-failure-visual-desc">Population contamination risk surfaced before the data is dirty.</p>
+      </div>
+    </div>
+  </div>
+  <a href="#failure-points-detail" class="argus-failure-visual-link">See detailed breakdown ↓</a>
+</section>
+
+<!-- SECTION 2  - FOUR FAILURE POINTS (detailed rows) -->
+<section class="argus-section argus-section-failures" id="failure-points-detail">
+  <p class="argus-eyebrow">THE PROBLEM</p>
+  <h2 class="argus-problem-headline">Four failure points. All modeled before the trial begins.</h2>
+  <div class="argus-failure-rows">
+    <div class="argus-failure-row">
+      <div class="argus-failure-left">
+        <span class="argus-failure-num">01</span>
+        <h3 class="argus-failure-name">Placebo Response Inflation</h3>
+      </div>
+      <div class="argus-failure-right">
+        <p class="argus-failure-desc">Patients likely to respond to placebo are identifiable from their behavioral profile before randomization. Ensemble surfaces this segment pre-enrollment, enabling eligibility criteria and sample size adjustments before protocol lock.</p>
+        <p class="argus-failure-impl">For CNS trials, this is the failure that contaminates the most expensive datasets.</p>
+      </div>
+    </div>
+    <div class="argus-failure-row">
+      <div class="argus-failure-left">
+        <span class="argus-failure-num">02</span>
+        <h3 class="argus-failure-name">Pre-Rerandomization Dropout</h3>
+      </div>
+      <div class="argus-failure-right">
+        <p class="argus-failure-desc">Patients who will disengage before the rerandomization window carry a detectable signal at baseline. Ensemble flags them at enrollment, assigns proactive retention protocols, and monitors risk in real time.</p>
+        <p class="argus-failure-impl">Before the window closes, not after the patient has already disengaged.</p>
+      </div>
+    </div>
+    <div class="argus-failure-row">
+      <div class="argus-failure-left">
+        <span class="argus-failure-num">03</span>
+        <h3 class="argus-failure-name">Adherence Failure</h3>
+      </div>
+      <div class="argus-failure-right">
+        <p class="argus-failure-desc">Disengagement from complex regimens becomes visible to investigators too late for meaningful intervention. Ensemble predicts it from psychosocial and behavioral conditioning before it is observable.</p>
+        <p class="argus-failure-impl">Enabling site-level action at the point where it can still change the outcome.</p>
+      </div>
+    </div>
+    <div class="argus-failure-row">
+      <div class="argus-failure-left">
+        <span class="argus-failure-num">04</span>
+        <h3 class="argus-failure-name">Screening Bias</h3>
+      </div>
+      <div class="argus-failure-right">
+        <p class="argus-failure-desc">Symptom exaggeration and undisclosed treatment history at enrollment are not reliably caught by structured intake. Ensemble models the psychosocial signals that correlate with screening inflation.</p>
+        <p class="argus-failure-impl">Population contamination risk surfaced before randomization, not after the data is dirty.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SECTION 3  - ENSEMBLE UI IN CONTEXT -->
+<section class="argus-section argus-section-ui">
+  <p class="argus-eyebrow">ENSEMBLE PLATFORM</p>
+  <h2 class="argus-ui-headline">Simulate before you commit.</h2>
+  <p class="argus-ui-subhead">Each prediction is calibrated to your specific protocol design and patient population, not generic literature averages.</p>
+  <div class="argus-ui-mockup">
+    <div class="argus-ui-left">
+      <div class="argus-ui-header-row">
+        <span class="argus-ui-brand">ENSEMBLE</span>
+        <span class="argus-ui-status">Digital Twin Active</span>
+      </div>
+      <div class="argus-ui-tags">Phase III MDD / Protocol B</div>
+      <div class="argus-ui-segment">
+        <span class="argus-ui-segment-label">PT SEGMENT · HIGH BURDEN</span>
+        <span class="argus-ui-segment-value">Caregiver · Urban · Low-income</span>
+      </div>
+      <div class="argus-ui-stats">
+        <div class="argus-ui-stat"><span class="argus-ui-stat-label">RISK SCORE</span> <span class="argus-ui-stat-val accent-purple">→ 0.91</span></div>
+        <div class="argus-ui-stat"><span class="argus-ui-stat-label">RISK CLIFF</span> <span class="argus-ui-stat-val">→ Visit 5</span></div>
+        <div class="argus-ui-stat"><span class="argus-ui-stat-label">BURDEN SCORE</span> <span class="argus-ui-stat-val accent-cyan">→ High</span></div>
+        <div class="argus-ui-stat"><span class="argus-ui-stat-label">INTERVENTION</span> <span class="argus-ui-stat-val accent-purple">→ Queued</span></div>
+      </div>
+      <div class="argus-ui-intervention">
+        <span class="argus-ui-intervention-label">RECOMMENDED INTERVENTION</span>
+        <span class="argus-ui-intervention-text">Deploy Visit 5 Prep Protocol. Pre-visit coordinator call plus a consent refresher.</span>
+        <span class="argus-ui-intervention-lift">+14% PREDICTED LIFT</span>
+      </div>
+    </div>
+    <div class="argus-ui-right">
+      <div class="argus-ui-chart-header">
+        <span class="argus-ui-chart-title">Retention Forecast · Segment vs Population</span>
+        <span class="argus-ui-chart-sub">Risk cliff at Visit 5, where the twin diverges from baseline</span>
+      </div>
+      <div class="argus-ui-chart-placeholder">
+        <svg class="argus-ui-chart-svg" viewBox="0 0 600 220" preserveAspectRatio="xMidYMid meet">
+          <defs>
+            <linearGradient id="argusPopGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+              <stop offset="0%" stop-color="#c6b9fd" stop-opacity="0.3" />
+              <stop offset="100%" stop-color="#c6b9fd" stop-opacity="0.05" />
+            </linearGradient>
+          </defs>
+          <polyline points="0,20 150,35 300,55 350,120 400,140 500,160 600,175" fill="url(#argusPopGrad)" stroke="#c6b9fd" stroke-width="2" stroke-opacity="0.5"/>
+          <polyline points="0,25 150,38 300,45 350,95 400,110 500,125 600,140" fill="none" stroke="#00BCD4" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+          <line x1="350" y1="0" x2="350" y2="220" stroke="#f0edf8" stroke-opacity="0.2" stroke-width="1" stroke-dasharray="4 4"/>
+        </svg>
+      </div>
+      <p class="argus-ui-reco-label">INTERVENTION RECOMMENDATIONS</p>
+      <div class="argus-ui-reco-rows">
+        <div class="argus-ui-reco-row">
+          <span class="argus-ui-reco-badge argus-ui-reco-high">HIGH</span>
+          <div class="argus-ui-reco-content">
+            <span class="argus-ui-reco-name">Deploy Visit 5 Prep Protocol. Pre-visit coordinator call plus a consent refresher.</span>
+            <span class="argus-ui-reco-desc">Targets caregiver scheduling conflict.</span>
+          </div>
+          <span class="argus-ui-reco-lift">+14% lift</span>
+        </div>
+        <div class="argus-ui-reco-row">
+          <span class="argus-ui-reco-badge argus-ui-reco-med">MED</span>
+          <div class="argus-ui-reco-content">
+            <span class="argus-ui-reco-name">Simplify V6–V9 Visit Cadence. Reduce in-person requirements in weeks 12–18.</span>
+            <span class="argus-ui-reco-desc">High predicted impact for caregiver segment.</span>
+          </div>
+          <span class="argus-ui-reco-lift">+9% lift</span>
+        </div>
+        <div class="argus-ui-reco-row">
+          <span class="argus-ui-reco-badge argus-ui-reco-monitor">MONITOR</span>
+          <div class="argus-ui-reco-content">
+            <span class="argus-ui-reco-name">Flag for Site Coordinator Review. Assign a proactive check-in at V4.</span>
+            <span class="argus-ui-reco-desc">Burden score elevated, no prior dropout history.</span>
+          </div>
+          <span class="argus-ui-reco-lift">+6% lift</span>
+        </div>
+      </div>
+      <div class="argus-ui-annotations">
+        <span class="argus-ui-ann" data-ann="risk">Behavioral risk score by segment</span>
+        <span class="argus-ui-ann" data-ann="curve">Predicted retention vs population baseline</span>
+        <span class="argus-ui-ann" data-ann="cliff">Dropout risk cliff, specific to this protocol</span>
+        <span class="argus-ui-ann" data-ann="reco">Ranked interventions with predicted lift</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SECTION 4  - THREE PHASES (timeline) -->
+<section class="argus-timeline-section">
+  <p class="argus-timeline-eyebrow">DEPLOYMENT</p>
+  <h2 class="argus-timeline-headline">Three phases. One intelligence layer.</h2>
+  <div class="argus-timeline-grid">
+    <div class="argus-timeline-line" aria-hidden="true"></div>
+    <div class="argus-timeline-col">
+      <div class="argus-timeline-num">01</div>
+      <span class="argus-timeline-label">PHASE 1</span>
+      <h3 class="argus-timeline-name">Recruitment Optimization</h3>
+      <p class="argus-timeline-desc">Before enrollment begins, predict which patient segments are most likely to adhere to your specific protocol. Segment-level retention curves identify where recruitment effort translates to completers. Adjust messaging strategy, channel allocation, and site targeting before screening begins.</p>
+      <p class="argus-timeline-outcome">Fewer replacement patients. Lower screen failure rates.</p>
+    </div>
+    <div class="argus-timeline-col">
+      <div class="argus-timeline-num">02</div>
+      <span class="argus-timeline-label">PHASE 2</span>
+      <h3 class="argus-timeline-name">Protocol Optimization</h3>
+      <p class="argus-timeline-desc">Given your protocol and target population, predict who drops out, when, and why. Model visit burden trade-offs against segment-level tolerance before protocol lock. Output: a retention forecast by patient segment with dropout risk concentrated by timepoint and behavioral driver.</p>
+      <p class="argus-timeline-outcome">Redesign the protocol around patients who will actually complete it.</p>
+    </div>
+    <div class="argus-timeline-col argus-timeline-col-last">
+      <div class="argus-timeline-num">03</div>
+      <span class="argus-timeline-label">PHASE 3</span>
+      <h3 class="argus-timeline-name">In-Trial Monitoring</h3>
+      <p class="argus-timeline-desc">Real-time dropout risk scoring for enrolled patients. Reads existing trial system signals such as ePRO completion rates, visit attendance, and scheduling changes. Surfaces patients at elevated risk and specifies intervention type, channel, and timing, as an intelligence layer on top of existing infrastructure.</p>
+      <p class="argus-timeline-outcome">Intervention before disengagement. Not rescue after.</p>
+    </div>
+  </div>
+</section>
+
+<!-- CTA - Request early access (simple band) -->
+<section class="simple-cta-band" id="cta">
+  <div class="simple-cta-row">
+    <a href="/early-access/" class="simple-cta-card simple-cta-primary">
+      <span class="simple-cta-label">Request Early Access</span>
+      <span class="simple-cta-arrow">→</span>
+    </a>
+    <a href="mailto:hello@tryintera.com" class="simple-cta-card simple-cta-secondary">
+      <span class="simple-cta-label">Contact us at hello@tryintera.com</span>
+      <span class="simple-cta-arrow">→</span>
+    </a>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="site-footer-inner">
+    <div class="site-footer-top">
+      <div class="site-footer-col site-footer-market">
+        <h3 class="site-footer-heading">Market</h3>
+        <button class="site-footer-market-pill" type="button">
+          <span class="site-footer-market-flag">🇺🇸</span>
+          <span>United States</span>
+          <span class="site-footer-market-arrow">→</span>
+        </button>
+      </div>
+      <div class="site-footer-col">
+        <h3 class="site-footer-heading">Intera</h3>
+        <a href="/research/">Research</a>
+        <a href="/resources/methodology/">Methodology</a>
+        <a href="/resources/ethics/">Ethics</a>
+      </div>
+      <div class="site-footer-col">
+        <h3 class="site-footer-heading">Solutions</h3>
+        <a href="/solutions/clinical-trials/">Clinical Trials</a>
+        <a href="/solutions/dct/">Decentralized Trials</a>
+        <a href="/solutions/commercial-pharma/">Commercial Pharma</a>
+      </div>
+      <div class="site-footer-col">
+        <h3 class="site-footer-heading">Company</h3>
+        <a href="/team/">Team</a>
+        <a href="/early-access/">Request Early Access</a>
+        <a href="mailto:hello@tryintera.com">Contact</a>
+      </div>
+      <div class="site-footer-col site-footer-col-small">
+        <h3 class="site-footer-heading">Follow</h3>
+        <div class="site-footer-social-inline">
+          <a href="https://www.linkedin.com" target="_blank" rel="noopener">LinkedIn</a>
+          <a href="https://x.com" target="_blank" rel="noopener">X</a>
+        </div>
+      </div>
+    </div>
+    <div class="site-footer-bottom">
+      <p class="site-footer-meta">© 2026 Intera · Synthetic populations for healthcare decisions.</p>
+      <div class="site-footer-social-inline">
+        <a href="mailto:hello@tryintera.com">hello@tryintera.com</a>
+      </div>
+    </div>
+  </div>
+  <div class="site-footer-wordmark" aria-hidden="true">Intera</div>
+</footer>
+
+
+<script src="../../script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>Patient Intelligence Methodology | Intera</title>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600;9..40,700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,500;8..60,600;8..60,700&family=JetBrains+Mono:wght@400;500&family=Lora:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+<link rel="icon" type="image/png" href="/favicon.png">
+<link rel="stylesheet" href="../../styles.css?v=4">
+</head>
+
+<body class="landing-ghibli hero-scale methodology-page">
+<nav class="nav-scale nav-visible" id="main-nav">
+  <a href="/" class="nav-scale-logo">
+    <img src="../../images/logo-intera.png" alt="" width="auto" height="40">
+    <span class="nav-scale-wordmark">Intera</span>
+  </a>
+  <div class="nav-scale-center">
+    <div class="nav-scale-dd">
+      <a href="#" class="nav-scale-link nav-scale-link-dd">Products &amp; Solutions <span class="nav-scale-chevron">↓</span></a>
+      <div class="nav-scale-dropdown">
+        <a href="/solutions/clinical-trials/" class="nav-scale-dropdown-item">Clinical Trials</a>
+        <a href="/solutions/dct/" class="nav-scale-dropdown-item">DCT</a>
+        <a href="/solutions/commercial-pharma/" class="nav-scale-dropdown-item">Commercial Pharma</a>
+      </div>
+    </div>
+    <div class="nav-scale-dd">
+      <a href="#" class="nav-scale-link nav-scale-link-dd nav-scale-link-active">Resources <span class="nav-scale-chevron">↓</span></a>
+      <div class="nav-scale-dropdown">
+        <a href="/resources/methodology/" class="nav-scale-dropdown-item">Methodology</a>
+        <a href="/resources/ethics/" class="nav-scale-dropdown-item">Ethics</a>
+      </div>
+    </div>
+    <a href="/team/" class="nav-scale-link">Team</a>
+  </div>
+  <a href="/early-access/" class="nav-scale-cta" id="nav-cta-early-access">Request Early Access</a>
+  <button id="mobile-menu-btn" aria-label="Open menu">
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
+</nav>
+
+<div id="mobile-overlay">
+  <button id="mobile-close-btn">✕</button>
+  <div class="mobile-overlay-menu">
+    <a href="/">Home</a>
+    <a href="/solutions/clinical-trials/">Clinical Trials</a>
+    <a href="/solutions/commercial-pharma/">Commercial Pharma</a>
+    <a href="/solutions/dct/">Decentralized Trials</a>
+    <a href="/resources/methodology/">Methodology</a>
+    <a href="/resources/ethics/">Ethics</a>
+    <a href="/team/">Team</a>
+    <a href="/early-access/">Request Early Access</a>
+  </div>
+</div>
+
+<main class="methodology-main">
+  <div class="methodology-grid">
+    <!-- LEFT: Sticky table of contents -->
+    <aside class="methodology-toc" data-methodology-toc>
+      <p class="methodology-toc-label">On this page</p>
+      <div class="methodology-chapters methodology-toc-nav">
+        <a href="#toc-methodology" class="methodology-toc-link methodology-toc-link-chapter methodology-toc-link-active">Methodology</a>
+        <a href="#toc-education" class="methodology-toc-link methodology-toc-link-chapter">Education</a>
+        <a href="#toc-our-approach" class="methodology-toc-link methodology-toc-link-chapter">Our approach</a>
+        <a href="#toc-validation" class="methodology-toc-link methodology-toc-link-chapter">Validation</a>
+      </div>
+      <div class="methodology-sections">
+        <span class="methodology-sections-label">Sections</span>
+        <a href="#what-is-a-digital-twin" class="methodology-section-link">What is a Digital Twin</a>
+        <a href="#how-industry-adopted-it" class="methodology-section-link">How Industry Adopted It</a>
+        <a href="#the-move-to-human-systems" class="methodology-section-link">The Move to Human Systems</a>
+        <a href="#the-gap-in-healthcare" class="methodology-section-link">The Gap in Healthcare</a>
+        <a href="#how-intera-builds-synthetic-patients" class="methodology-section-link">How Intera Builds Synthetic Patients</a>
+        <a href="#what-we-simulate" class="methodology-section-link">What We Simulate</a>
+        <a href="#validation-and-limitations" class="methodology-section-link">Validation and Limitations</a>
+      </div>
+    </aside>
+
+    <!-- RIGHT: Article content -->
+    <article class="methodology-article" id="toc-methodology">
+      <header class="methodology-article-header">
+        <p class="methodology-eyebrow">METHODOLOGY</p>
+        <h1 class="methodology-title">Patient Intelligence: The Science Behind Intera</h1>
+        <p class="methodology-subtitle">A technical overview of how Intera constructs behavioral digital twins of patient populations, where the methodology comes from, how it works, and where it falls short.</p>
+        <p class="methodology-meta">Intera Research · 2026</p>
+        <hr class="methodology-header-rule">
+      </header>
+
+      <div id="toc-education"></div>
+
+      <!-- Section 1 -->
+      <section id="what-is-a-digital-twin" class="methodology-section">
+        <h2 class="methodology-section-heading">What is a Digital Twin</h2>
+        <p class="methodology-body">A digital twin is a living model of a real system, such as a factory, a warehouse, a supply chain, or a customer, that you can use to run controlled experiments before committing real money or real risk. The core idea is simple: build a faithful representation of the system, then simulate changes to it before implementing them in the world.</p>
+        <p class="methodology-body">McKinsey has tracked this technology since the early 2020s, framing it as a digital replica of an object, person, system, or process, contextualized in its environment and used to simulate real situations and outcomes. The key word is contextualized. A digital twin is not a static model. It is conditioned on the specific environment it is meant to represent.</p>
+        <p class="methodology-body">The questions a digital twin answers are decision questions:</p>
+        <blockquote class="methodology-quote">"Where will this break?" / "What's driving the failure?" / "If we change X, what happens to Y?"</blockquote>
+        <p class="methodology-body">These are not descriptive questions. They are interventional. The value of a digital twin is not that it describes a system. It is that it lets you change the system safely before you act on it.</p>
+      </section>
+
+      <!-- Section 2 -->
+      <section id="how-industry-adopted-it" class="methodology-section">
+        <h2 class="methodology-section-heading">How Industry Adopted Digital Twins</h2>
+        <p class="methodology-body">The technology developed in phases. It started in engineering, where the value proposition was clearest: simulate a physical system before building or modifying it, and avoid costly real-world failures.</p>
+
+        <h3 class="methodology-subsection-heading">MANUFACTURING</h3>
+        <p class="methodology-body">The earliest large-scale deployments were in manufacturing. Automakers and aerospace companies began building virtual replicas of production facilities to simulate changes before implementing them. Work that previously required weeks of real-world trial, including line reconfigurations, throughput optimizations, and equipment placement, could be run in simulation first. BMW scaled this approach across more than thirty production sites, using digital twin environments to accelerate planning cycles that previously required physical modification.</p>
+
+        <h3 class="methodology-subsection-heading">SUPPLY CHAIN</h3>
+        <p class="methodology-body">Supply chain adoption followed. The use case was modeling end-to-end interactions from manufacturing through warehousing through distribution through returns, and using predictive AI layered on top to make the twin prescriptive, not just descriptive. Instead of asking where inventory is, supply chain twins asked where inventory will fail to be and what to do before it does.</p>
+
+        <h3 class="methodology-subsection-heading">LOGISTICS AND WAREHOUSING</h3>
+        <p class="methodology-body">Physics-based simulation extended the model into warehouse operations. Companies began simulating warehouse layouts, robot interactions, and demand surge scenarios before deploying physical changes. The output was not a single recommendation. It was a ranked set of changes with predicted operational impact. Test the design virtually, then deploy only the modifications that actually move throughput.</p>
+
+        <h3 class="methodology-subsection-heading">SMART BUILDINGS AND INFRASTRUCTURE</h3>
+        <p class="methodology-body">As systems became more complex, digital twins became the operational layer. Smart building platforms emerged as digital replicas of physical spaces, monitoring energy consumption, occupancy patterns, and maintenance events in real time, with simulation capabilities layered on top for scenario planning. The twin became the interface between operators and complex infrastructure.</p>
+      </section>
+
+      <!-- Section 3 -->
+      <section id="the-move-to-human-systems" class="methodology-section">
+        <h2 class="methodology-section-heading">The Move to Human Systems</h2>
+        <p class="methodology-body">The inflection point came when the twin concept moved from physical systems to human systems. The question shifted from "how will this machine behave" to "how will this person behave."</p>
+        <p class="methodology-body">Gartner formalized this as the "digital twin of a customer," a simulation of customer experience used to predict future behaviors from online and physical interaction data. The premise is that individual and population-level behavior can be modeled with sufficient fidelity to run controlled experiments: test how a customer segment will respond to a new interface, a pricing change, or a service modification before deploying it.</p>
+        <p class="methodology-body">This is the same logic as the factory twin applied to people. The difference is that human systems introduce variables that physical systems do not: psychological state, social context, financial pressure, trust, health status, and lived experience. These are harder to model. But the decision value is identical: simulate before you commit.</p>
+        <p class="methodology-body">The adoption signal in adjacent industries is now visible. Major consumer health companies have begun hiring for roles explicitly requiring digital twin and customer simulation capabilities, integrating behavioral simulation into customer experience strategy rather than treating it as a research tool.</p>
+
+        <div class="methodology-callout">
+          <p>The pattern across all industry adoption: digital twins start in engineering and operations, then migrate up the stack into decision-making. Human behavior is the last frontier of that migration.</p>
+        </div>
+      </section>
+
+      <!-- Section 4 -->
+      <section id="the-gap-in-healthcare" class="methodology-section">
+        <h2 class="methodology-section-heading">The Gap in Healthcare</h2>
+        <p class="methodology-body">Healthcare is the domain where behavioral prediction carries the highest decision stakes, and where the current infrastructure for patient insight is the least equipped to provide it.</p>
+        <p class="methodology-body">Clinical trial teams design protocols without reliable forecasts of which patients will complete them. Commercial pharma teams build patient support programs without knowing which patient segments will actually engage. Hospital systems deploy readmission prevention resources without predicting which patients are at highest risk before discharge.</p>
+        <p class="methodology-body">The current methods for patient insight share a common flaw: they capture stated intent rather than predicted behavior. Survey panels, focus groups, and advisory boards measure what patients say they will do. The say-do gap in healthcare is well-documented. Patients overstate willingness to initiate therapy, understate access barriers, and misreport adherence intent under social desirability pressure. The insight derived from these methods is structurally biased toward outcomes that are more optimistic than reality.</p>
+        <p class="methodology-body">The result is predictable: clinical trial attrition rates that have not meaningfully improved in twenty years, patient support programs with engagement rates in the single digits, and commercial launch forecasts that consistently miss on adherence.</p>
+        <p class="methodology-body">Intera's premise is that behavioral digital twins of patient populations can close this gap, not by replacing human research, but by providing a faster, cheaper, and less biased signal for decisions that currently get made without one.</p>
+      </section>
+
+      <div id="toc-our-approach"></div>
+
+      <!-- Section 5 -->
+      <section id="how-intera-builds-synthetic-patients" class="methodology-section">
+        <h2 class="methodology-section-heading">How Intera Builds Synthetic Patients</h2>
+        <p class="methodology-body">Each synthetic patient is constructed across four conditioning layers. These layers are designed to capture the dimensions of a real patient that drive behavioral outcomes, not the dimensions that are easiest to measure.</p>
+
+        <div class="methodology-list">
+          <div class="methodology-list-item">
+            <span class="methodology-list-num">LAYER 1</span>
+            <h3 class="methodology-list-heading">Structured Demographic and Clinical Inputs</h3>
+            <p class="methodology-list-body">Age, sex, indication, comorbidities, medication history, insurance status, geography, and clinical state. These are the inputs that define who the patient is in the healthcare system, the structured record.</p>
+          </div>
+          <div class="methodology-list-item">
+            <span class="methodology-list-num">LAYER 2</span>
+            <h3 class="methodology-list-heading">Psychosocial Traits via COM-B Framework</h3>
+            <p class="methodology-list-body">Capability (physical and psychological ability to engage with the protocol), Opportunity (environmental and social factors that enable or prevent engagement), and Motivation (automatic and reflective motivational states). The COM-B framework is the validated behavioral science model Intera uses to structure psychosocial conditioning.</p>
+          </div>
+          <div class="methodology-list-item">
+            <span class="methodology-list-num">LAYER 3</span>
+            <h3 class="methodology-list-heading">Narrative Data</h3>
+            <p class="methodology-list-body">Patient diaries, forum posts, longitudinal survey records, and qualitative research that encode personality, lived experience, and emotional style. Narrative data captures what structured records miss: the texture of how a patient experiences illness and healthcare interaction.</p>
+          </div>
+          <div class="methodology-list-item">
+            <span class="methodology-list-num">LAYER 4</span>
+            <h3 class="methodology-list-heading">Validated Psychometrics</h3>
+            <p class="methodology-list-body">Big Five personality scores, domain-specific behavioral scales (health locus of control, illness perception, treatment burden scales), and activation scores. These are standardized instruments with known predictive validity for healthcare behavior.</p>
+          </div>
+        </div>
+
+        <p class="methodology-body">Persona cohorts are sampled to match the demographic and clinical distributions of a real target population. Where structured intake records exist from partners, sponsors, or data collaborators, they improve calibration fidelity. Where they do not, the platform runs on population priors derived from large-scale behavioral and clinical datasets.</p>
+      </section>
+
+      <!-- Section 6 -->
+      <section id="what-we-simulate" class="methodology-section">
+        <h2 class="methodology-section-heading">What We Simulate</h2>
+        <p class="methodology-body">The conditioning layers define who the patient is. The simulation layer models what that patient will do when placed in a specific protocol, program, or care pathway.</p>
+        <p class="methodology-body">Intera simulates patient behavior across three classes of decision context:</p>
+
+        <div class="methodology-list methodology-list-blue">
+          <div class="methodology-list-item">
+            <span class="methodology-list-num">CLINICAL TRIALS</span>
+            <h3 class="methodology-list-heading">Protocol adherence and dropout</h3>
+            <p class="methodology-list-body">Given a specific protocol design, including visit schedule, assessment burden, intervention complexity, and site structure, which patient segments will complete it, which will disengage, at what point, and for what behavioral reasons. Placebo response probability by segment. Screening inflation risk. In-trial adherence trajectories.</p>
+          </div>
+          <div class="methodology-list-item">
+            <span class="methodology-list-num">COMMERCIAL PHARMA</span>
+            <h3 class="methodology-list-heading">Therapy initiation and persistence</h3>
+            <p class="methodology-list-body">How defined patient segments move through initiation, titration, refill, and switch. Where access friction, cost barriers, and clinical anxiety create gaps. How specific messaging variants land with specific segments before media spend is committed.</p>
+          </div>
+          <div class="methodology-list-item">
+            <span class="methodology-list-num">DECENTRALIZED TRIALS AND DIGITAL PROGRAMS</span>
+            <h3 class="methodology-list-heading">Technology interaction and dropout</h3>
+            <p class="methodology-list-body">How patient segments interact with app onboarding flows, ePRO schedules, wearable requirements, and remote visit cadence. Where behavioral friction creates abandonment before it is observable in completion data.</p>
+          </div>
+        </div>
+
+        <p class="methodology-body">The core principle across all three: simulate before you commit. Instead of modeling equipment performance, we model human decision-making, predicting how patients move through protocols and care pathways before real-world resources are deployed.</p>
+      </section>
+
+      <div id="toc-validation"></div>
+
+      <!-- Section 7 -->
+      <section id="validation-and-limitations" class="methodology-section">
+        <h2 class="methodology-section-heading">Validation and Limitations</h2>
+        <p class="methodology-body">Intera is designed to be evaluated like a forecasting system, not treated like a black box. We benchmark outputs against held-out outcomes and compare against simple baselines to quantify lift.</p>
+
+        <div class="methodology-stats">
+          <div class="methodology-stat">
+            <div class="methodology-stat-value">15%</div>
+            <p class="methodology-stat-label">Mean absolute error in retention prediction. Retention curves back-tested against historical study outcomes using held-out scenarios. Compared against historical-average baseline.</p>
+          </div>
+          <div class="methodology-stat">
+            <div class="methodology-stat-value">92%</div>
+            <p class="methodology-stat-label">Directional agreement in back-tests. Message and scenario simulations validated against held-out human panel results. Measured as agreement on segment-level direction and rank order.</p>
+          </div>
+        </div>
+
+        <div class="methodology-limitations">
+          <h3 class="methodology-limitations-title">Where the model falls short</h3>
+          <p>Social desirability bias in language models. LLM-driven personas can inherit the social desirability tendencies present in their training data, overstating prosocial behaviors and understating stigmatized ones. We actively monitor for this and disclose it per simulation, but it has not been fully eliminated.</p>
+          <p>Protocol-specificity requires engagement. Generic outputs are less useful than protocol-calibrated ones. Simulations run on population priors without sponsor-specific data are less precise than those conditioned on actual intake records or study history. The platform improves with engagement.</p>
+          <p>Outputs are directional signals, not oracles. Intera is not a replacement for human research. It is an augmentation layer for decisions that currently get made without a behavioral signal. We do not claim perfect predictions and do not recommend acting on Intera outputs alone for high-stakes regulatory decisions.</p>
+        </div>
+      </section>
+    </article>
+  </div>
+</main>
+
+<!-- Bottom CTA -->
+<section class="methodology-bottom-cta">
+  <div class="methodology-bottom-cta-inner">
+    <h2 class="methodology-bottom-cta-headline">See the methodology in practice.</h2>
+    <p class="methodology-bottom-cta-body">We run protocol-calibrated simulations for CROs, sponsors, and life sciences consultancies. A pilot takes four weeks.</p>
+    <a href="/early-access/" class="argus-cta methodology-bottom-cta-button">Request Early Access</a>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="site-footer-inner">
+    <div class="site-footer-top">
+      <div class="site-footer-col site-footer-market">
+        <h3 class="site-footer-heading">Market</h3>
+        <button class="site-footer-market-pill" type="button">
+          <span class="site-footer-market-flag">🇺🇸</span>
+          <span>United States</span>
+          <span class="site-footer-market-arrow">→</span>
+        </button>
+      </div>
+      <div class="site-footer-col">
+        <h3 class="site-footer-heading">Intera</h3>
+        <a href="/resources/methodology/">Methodology</a>
+        <a href="/resources/ethics/">Ethics</a>
+      </div>
+      <div class="site-footer-col">
+        <h3 class="site-footer-heading">Solutions</h3>
+        <a href="/solutions/clinical-trials/">Clinical Trials</a>
+        <a href="/solutions/dct/">Decentralized Trials</a>
+        <a href="/solutions/commercial-pharma/">Commercial Pharma</a>
+      </div>
+      <div class="site-footer-col">
+        <h3 class="site-footer-heading">Company</h3>
+        <a href="/team/">Team</a>
+        <a href="/early-access/">Request Early Access</a>
+        <a href="mailto:hello@tryintera.com">Contact</a>
+      </div>
+      <div class="site-footer-col site-footer-col-small">
+        <h3 class="site-footer-heading">Follow</h3>
+        <div class="site-footer-social-inline">
+          <a href="https://www.linkedin.com" target="_blank" rel="noopener">LinkedIn</a>
+          <a href="https://x.com" target="_blank" rel="noopener">X</a>
+        </div>
+      </div>
+    </div>
+    <div class="site-footer-bottom">
+      <p class="site-footer-meta">© 2026 Intera · Synthetic populations for healthcare decisions.</p>
+      <div class="site-footer-social-inline">
+        <a href="mailto:hello@tryintera.com">hello@tryintera.com</a>
+      </div>
+    </div>
+  </div>
+  <div class="site-footer-wordmark" aria-hidden="true">Intera</div>
+</footer>
+
+<script src="../../script.js"></script>
+</body>
+</html>
+ 

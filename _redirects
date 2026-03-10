@@ -1,0 +1,8 @@
+# Redirect old .html URLs to folder-style routes
+/team.html          /team/           301
+/early-access.html  /early-access/   301
+/solutions/clinical-trials.html   /solutions/clinical-trials/  301
+/solutions/dct.html               /solutions/dct/              301
+/solutions/commercial-pharma.html  /solutions/commercial-pharma/ 301
+/resources/methodology.html       /resources/methodology/       301
+/resources/ethics.html            /resources/ethics/             301

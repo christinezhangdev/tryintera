@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>Early Access | Intera</title>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600;9..40,700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,500;8..60,600;8..60,700&family=JetBrains+Mono:wght@400;500&family=Lora:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+<link rel="icon" type="image/png" href="/favicon.png">
+<link rel="stylesheet" href="../styles.css?v=4">
+</head>
+<body class="landing-ghibli hero-scale early-access-page">
+<nav class="nav-scale nav-visible" id="main-nav">
+  <a href="/" class="nav-scale-logo">
+    <img src="../images/logo-intera.png" alt="" width="auto" height="40">
+    <span class="nav-scale-wordmark">Intera</span>
+  </a>
+  <div class="nav-scale-center">
+    <div class="nav-scale-dd">
+      <a href="#" class="nav-scale-link nav-scale-link-dd">Products &amp; Solutions <span class="nav-scale-chevron">↓</span></a>
+      <div class="nav-scale-dropdown">
+        <a href="/solutions/clinical-trials/" class="nav-scale-dropdown-item">Clinical Trials</a>
+        <a href="/solutions/dct/" class="nav-scale-dropdown-item">DCT</a>
+        <a href="/solutions/commercial-pharma/" class="nav-scale-dropdown-item">Commercial Pharma</a>
+      </div>
+    </div>
+    <div class="nav-scale-dd">
+      <a href="#" class="nav-scale-link nav-scale-link-dd">Resources <span class="nav-scale-chevron">↓</span></a>
+      <div class="nav-scale-dropdown">
+        <a href="/resources/methodology/" class="nav-scale-dropdown-item">Methodology</a>
+        <a href="/resources/ethics/" class="nav-scale-dropdown-item">Ethics</a>
+      </div>
+    </div>
+        <a href="/research/" class="nav-scale-link">Research</a>
+<a href="/team/" class="nav-scale-link">Team</a>
+  </div>
+  <a href="/early-access/" class="nav-scale-cta" id="nav-cta-early-access">Request Early Access</a>
+  <button id="mobile-menu-btn" aria-label="Open menu">
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
+</nav>
+
+<div id="mobile-overlay">
+  <button id="mobile-close-btn">✕</button>
+  <div class="mobile-overlay-menu">
+    <a href="/">Home</a>
+    <a href="/solutions/clinical-trials/">Clinical Trials</a>
+    <a href="/solutions/commercial-pharma/">Commercial Pharma</a>
+    <a href="/solutions/dct/">Decentralized Trials</a>
+    <a href="/research/">Research</a>
+    <a href="/resources/methodology/">Methodology</a>
+    <a href="/resources/ethics/">Ethics</a>
+    <a href="/team/">Team</a>
+    <a href="/early-access/">Request Early Access</a>
+  </div>
+</div>
+
+<main class="early-access-main">
+  <section class="early-access-section">
+    <div class="early-access-grid">
+      <div class="early-access-left">
+        <p class="early-access-eyebrow">EARLY ACCESS</p>
+        <h1 class="early-access-headline">Work with us.</h1>
+        <p class="early-access-body">
+          We are in active validation partnerships with academic medical centers and life sciences organizations. We work with CROs, sponsors, consultancies, and health systems on protocol-calibrated patient intelligence.
+        </p>
+
+        <div class="early-access-contact">
+          <div class="early-access-contact-row">
+            <p class="early-access-contact-label">EMAIL</p>
+            <p class="early-access-contact-value">
+              <a href="mailto:hello@tryintera.com">hello@tryintera.com</a>
+            </p>
+          </div>
+          <div class="early-access-contact-row">
+            <p class="early-access-contact-label">BASED IN</p>
+            <p class="early-access-contact-value">San Francisco, CA</p>
+          </div>
+          <div class="early-access-contact-row">
+            <p class="early-access-contact-label">BACKED BY</p>
+            <p class="early-access-contact-value">Unusual Ventures · Correlation Ventures</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="early-access-right">
+        <div class="early-access-form-panel">
+          <form class="early-access-form" action="https://formspree.io/f/xvgpqnrl" method="POST">
+            <div class="early-access-row early-access-row-two">
+              <div class="early-access-field">
+                <label class="early-access-label" for="ea-name">Name</label>
+                <input id="ea-name" name="name" type="text" required placeholder="Name">
+              </div>
+              <div class="early-access-field">
+                <label class="early-access-label" for="ea-email">Work email</label>
+                <input id="ea-email" name="email" type="email" required placeholder="Work email">
+              </div>
+            </div>
+
+            <div class="early-access-field">
+              <label class="early-access-label" for="ea-org">Organization</label>
+              <input id="ea-org" name="organization" type="text" placeholder="Organization">
+            </div>
+
+            <div class="early-access-field">
+              <label class="early-access-label" for="ea-role">Role</label>
+              <select id="ea-role" name="role">
+                <option value="">Select your role</option>
+                <option value="cro">CRO</option>
+                <option value="sponsor">Sponsor</option>
+                <option value="consultancy">Life Sciences Consultancy</option>
+                <option value="hospital-system">Hospital System</option>
+                <option value="pharma">Pharma</option>
+                <option value="patient-services">Patient Services</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+
+            <div class="early-access-field">
+              <label class="early-access-label" for="ea-message">Message</label>
+              <textarea id="ea-message" name="message" rows="5" placeholder="Tell us about your use case (optional)"></textarea>
+            </div>
+
+            <button class="early-access-submit" type="submit">Request Early Access</button>
+            <p class="early-access-inline-email">Or email us directly at <a href="mailto:hello@tryintera.com">hello@tryintera.com</a></p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+ 
+<footer class="site-footer">
+  <div class="site-footer-inner">
+    <div class="site-footer-top">
+      <div class="site-footer-col site-footer-market">
+        <h3 class="site-footer-heading">Market</h3>
+        <button class="site-footer-market-pill" type="button">
+          <span class="site-footer-market-flag">🇺🇸</span>
+          <span>United States</span>
+          <span class="site-footer-market-arrow">→</span>
+        </button>
+      </div>
+      <div class="site-footer-col">
+        <h3 class="site-footer-heading">Intera</h3>
+        <a href="/research/">Research</a>
+        <a href="/resources/methodology/">Methodology</a>
+        <a href="/resources/ethics/">Ethics</a>
+      </div>
+      <div class="site-footer-col">
+        <h3 class="site-footer-heading">Solutions</h3>
+        <a href="/solutions/clinical-trials/">Clinical Trials</a>
+        <a href="/solutions/dct/">Decentralized Trials</a>
+        <a href="/solutions/commercial-pharma/">Commercial Pharma</a>
+      </div>
+      <div class="site-footer-col">
+        <h3 class="site-footer-heading">Company</h3>
+        <a href="/team/">Team</a>
+        <a href="/early-access/">Request Early Access</a>
+        <a href="mailto:hello@tryintera.com">Contact</a>
+      </div>
+      <div class="site-footer-col site-footer-col-small">
+        <h3 class="site-footer-heading">Follow</h3>
+        <div class="site-footer-social-inline">
+          <a href="https://www.linkedin.com" target="_blank" rel="noopener">LinkedIn</a>
+          <a href="https://x.com" target="_blank" rel="noopener">X</a>
+        </div>
+      </div>
+    </div>
+    <div class="site-footer-bottom">
+      <p class="site-footer-meta">© 2026 Intera · Synthetic populations for healthcare decisions.</p>
+      <div class="site-footer-social-inline">
+        <a href="mailto:hello@tryintera.com">hello@tryintera.com</a>
+      </div>
+    </div>
+  </div>
+  <div class="site-footer-wordmark" aria-hidden="true">Intera</div>
+</footer>
+
+<script src="../script.js"></script>
+</body>
+</html>

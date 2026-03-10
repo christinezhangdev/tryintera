@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>Research Backtests | Intera</title>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600;9..40,700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,500;8..60,600;8..60,700&family=JetBrains+Mono:wght@400;500&family=Lora:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+<link rel="icon" type="image/png" href="/favicon.png">
+<link rel="stylesheet" href="../styles.css?v=4">
+</head>
+
+<body class="landing-ghibli hero-scale research-page">
+<nav class="nav-scale nav-visible" id="main-nav">
+  <a href="/" class="nav-scale-logo">
+    <img src="../images/logo-intera.png" alt="" width="auto" height="40">
+    <span class="nav-scale-wordmark">Intera</span>
+  </a>
+  <div class="nav-scale-center">
+    <div class="nav-scale-dd">
+      <a href="#" class="nav-scale-link nav-scale-link-dd">Products &amp; Solutions <span class="nav-scale-chevron">↓</span></a>
+      <div class="nav-scale-dropdown">
+        <a href="/solutions/clinical-trials/" class="nav-scale-dropdown-item">Clinical Trials</a>
+        <a href="/solutions/dct/" class="nav-scale-dropdown-item">DCT</a>
+        <a href="/solutions/commercial-pharma/" class="nav-scale-dropdown-item">Commercial Pharma</a>
+      </div>
+    </div>
+    <div class="nav-scale-dd">
+      <a href="#" class="nav-scale-link nav-scale-link-dd">Resources <span class="nav-scale-chevron">↓</span></a>
+      <div class="nav-scale-dropdown">
+        <a href="/resources/methodology/" class="nav-scale-dropdown-item">Methodology</a>
+        <a href="/resources/ethics/" class="nav-scale-dropdown-item">Ethics</a>
+      </div>
+    </div>
+    <a href="/research/" class="nav-scale-link nav-scale-link-active">Research</a>
+    <a href="/team/" class="nav-scale-link">Team</a>
+  </div>
+  <a href="/early-access/" class="nav-scale-cta" id="nav-cta-early-access">Request Early Access</a>
+  <button id="mobile-menu-btn" aria-label="Open menu">
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
+</nav>
+
+<div id="mobile-overlay">
+  <button id="mobile-close-btn">✕</button>
+  <div class="mobile-overlay-menu">
+    <a href="/">Home</a>
+    <a href="/solutions/clinical-trials/">Clinical Trials</a>
+    <a href="/solutions/commercial-pharma/">Commercial Pharma</a>
+    <a href="/solutions/dct/">Decentralized Trials</a>
+    <a href="/research/">Research</a>
+    <a href="/resources/methodology/">Methodology</a>
+    <a href="/resources/ethics/">Ethics</a>
+    <a href="/team/">Team</a>
+    <a href="/early-access/">Request Early Access</a>
+  </div>
+</div>
+
+<section class="research-hero">
+  <p class="research-eyebrow">EVIDENCE</p>
+  <h1 class="research-hero-title">Backtests against published survey data.</h1>
+  <p class="research-hero-body">
+    Each backtest uses Intera's synthetic population engine to predict opinion distributions before seeing results.
+    Predictors: core demographics and partisan identification.
+  </p>
+  <p class="research-hero-disclaimer">
+    Intera has no affiliation with Pew Research Center or KFF. These surveys are publicly available research used independently
+    as benchmark datasets to evaluate the accuracy of Intera's synthetic population engine.
+  </p>
+</section>
+
+<main class="research-main">
+  <div class="research-inner">
+    <div class="research-board">
+      <!-- Entry 1: GLP-1 DRUGS -->
+      <article class="research-entry">
+        <div class="research-entry-left">
+          <p class="research-category">GLP-1 DRUGS</p>
+          <p class="research-date">Feb 2024</p>
+          <span class="research-entry-accent"></span>
+        </div>
+        <div class="research-entry-right">
+          <h2 class="research-title"><a href="https://www.pewresearch.org/science/2024/02/26/how-americans-view-weight-loss-drugs-and-their-potential-impact-on-obesity-in-the-u-s/" target="_blank" rel="noopener" class="research-title-link">Pew Research — How Americans View Weight-Loss Drugs</a></h2>
+          <p class="research-descriptor">Predicting public opinion on GLP-1 drugs across demographic and partisan segments.</p>
+          <p class="research-body">
+            For this backtest, Intera builds a synthetic U.S. adult population calibrated to the demographic profile in the Pew
+            survey on weight-loss drugs, including age, gender, income, and region, plus self-reported party identification.
+            The model is asked, before seeing results, to predict support, concern, and willingness to try GLP-1 medications for
+            weight loss by segment. Predicted response distributions are then compared to observed survey opinion to evaluate
+            whether the synthetic population captures the right directional shifts across partisan and demographic lines.
+          </p>
+          <p class="research-source">
+            Source: <a href="https://www.pewresearch.org/science/2024/02/26/how-americans-view-weight-loss-drugs-and-their-potential-impact-on-obesity-in-the-u-s/" target="_blank" rel="noopener">Pew Research Center, Feb 26, 2024</a>
+          </p>
+          <div class="research-stats">
+            <div class="research-stat">
+              <span class="research-stat-value">92%</span>
+              <span class="research-stat-label">DIRECTIONAL AGREEMENT</span>
+            </div>
+            <div class="research-stat">
+              <span class="research-stat-value research-stat-pending">[PENDING]</span>
+              <span class="research-stat-label">OPINION QUESTIONS TESTED</span>
+            </div>
+          </div>
+          <div class="research-tags">
+            <span class="research-tag">Sentiment</span>
+            <span class="research-tag">Segment-level</span>
+            <span class="research-tag">Behavioral prediction</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- Entry 2: REPRODUCTIVE HEALTH -->
+      <article class="research-entry">
+        <div class="research-entry-left">
+          <p class="research-category">REPRODUCTIVE HEALTH</p>
+          <p class="research-date">Dec 2025</p>
+          <span class="research-entry-accent"></span>
+        </div>
+        <div class="research-entry-right">
+          <h2 class="research-title"><a href="https://www.kff.org/public-opinion/kff-health-tracking-poll-knowledge-and-views-of-medication-abortion/" target="_blank" rel="noopener" class="research-title-link">KFF Health Tracking Poll — Knowledge and Views of Medication Abortion</a></h2>
+          <p class="research-descriptor">Predicting stated views on medication abortion access across partisan and demographic groups.</p>
+          <p class="research-body">
+            Intera constructs a synthetic panel that mirrors the KFF tracking poll sample, with conditioning on age, gender,
+            race and ethnicity, income, and region, alongside partisan identification and abortion self-identity. The engine is
+            then tasked with predicting support and opposition for medication abortion, perceived safety, and views on specific
+            access restrictions by segment. We compare predicted opinion distributions to the KFF topline to assess whether the
+            synthetic population anticipates the observed partisan and demographic splits in comfort, access preferences, and
+            uncertainty around medication abortion.
+          </p>
+          <p class="research-source">
+            Source: <a href="https://www.kff.org/public-opinion/kff-health-tracking-poll-knowledge-and-views-of-medication-abortion/" target="_blank" rel="noopener">KFF, Dec 5, 2025</a>
+          </p>
+          <div class="research-stats">
+            <div class="research-stat">
+              <span class="research-stat-value">92%</span>
+              <span class="research-stat-label">DIRECTIONAL AGREEMENT</span>
+            </div>
+            <div class="research-stat">
+              <span class="research-stat-value research-stat-pending">[PENDING]</span>
+              <span class="research-stat-label">OPINION QUESTIONS TESTED</span>
+            </div>
+          </div>
+          <div class="research-tags">
+            <span class="research-tag">Sentiment</span>
+            <span class="research-tag">Access &amp; barriers</span>
+            <span class="research-tag">Segment-level</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- Entry 3: VACCINE TRUST -->
+      <article class="research-entry">
+        <div class="research-entry-left">
+          <p class="research-category">VACCINE TRUST</p>
+          <p class="research-date">Aug 2025</p>
+          <span class="research-entry-accent"></span>
+        </div>
+        <div class="research-entry-right">
+          <h2 class="research-title"><a href="https://www.kff.org/health-information-trust/kff-tracking-poll-on-health-information-and-trust-covid-19-vaccine-update/" target="_blank" rel="noopener" class="research-title-link">KFF — Health Information Trust and COVID-19 Vaccine Attitudes</a></h2>
+          <p class="research-descriptor">Forecasting trust in health information sources and vaccine sentiment by segment.</p>
+          <p class="research-body">
+            In this backtest, Intera simulates how different demographic and partisan segments trust doctors, public health
+            agencies, and political actors as vaccine information sources. The synthetic population is conditioned on age,
+            race and ethnicity, education, region, and partisan identification, then asked to predict trust levels and
+            likelihood of receiving a COVID-19 vaccine in the coming season. We evaluate how well Intera matches KFF's
+            observed patterns — for example, higher trust in personal physicians across parties and diverging views on CDC
+            guidance and vaccine uptake among Democrats, Republicans, and independents.
+          </p>
+          <p class="research-source">
+            Source: <a href="https://www.kff.org/health-information-trust/kff-tracking-poll-on-health-information-and-trust-covid-19-vaccine-update/" target="_blank" rel="noopener">KFF, Aug 1, 2025</a>
+          </p>
+          <div class="research-stats">
+            <div class="research-stat">
+              <span class="research-stat-value">92%</span>
+              <span class="research-stat-label">DIRECTIONAL AGREEMENT</span>
+            </div>
+            <div class="research-stat">
+              <span class="research-stat-value research-stat-pending">[PENDING]</span>
+              <span class="research-stat-label">OPINION QUESTIONS TESTED</span>
+            </div>
+          </div>
+          <div class="research-tags">
+            <span class="research-tag">Trust &amp; uptake</span>
+            <span class="research-tag">Sentiment</span>
+            <span class="research-tag">Segment-level</span>
+          </div>
+        </div>
+      </article>
+    </div>
+  </div>
+</main>
+ 
+<footer class="site-footer">
+  <div class="site-footer-inner">
+    <div class="site-footer-top">
+      <div class="site-footer-col site-footer-market">
+        <h3 class="site-footer-heading">Market</h3>
+        <button class="site-footer-market-pill" type="button">
+          <span class="site-footer-market-flag">🇺🇸</span>
+          <span>United States</span>
+          <span class="site-footer-market-arrow">→</span>
+        </button>
+      </div>
+      <div class="site-footer-col">
+        <h3 class="site-footer-heading">Intera</h3>
+        <a href="/research/">Research</a>
+        <a href="/resources/methodology/">Methodology</a>
+        <a href="/resources/ethics/">Ethics</a>
+      </div>
+      <div class="site-footer-col">
+        <h3 class="site-footer-heading">Solutions</h3>
+        <a href="/solutions/clinical-trials/">Clinical Trials</a>
+        <a href="/solutions/dct/">Decentralized Trials</a>
+        <a href="/solutions/commercial-pharma/">Commercial Pharma</a>
+      </div>
+      <div class="site-footer-col">
+        <h3 class="site-footer-heading">Company</h3>
+        <a href="/team/">Team</a>
+        <a href="/early-access/">Request Early Access</a>
+        <a href="mailto:hello@tryintera.com">Contact</a>
+      </div>
+      <div class="site-footer-col site-footer-col-small">
+        <h3 class="site-footer-heading">Follow</h3>
+        <div class="site-footer-social-inline">
+          <a href="https://www.linkedin.com" target="_blank" rel="noopener">LinkedIn</a>
+          <a href="https://x.com" target="_blank" rel="noopener">X</a>
+        </div>
+      </div>
+    </div>
+    <div class="site-footer-bottom">
+      <p class="site-footer-meta">© 2026 Intera · Synthetic populations for healthcare decisions.</p>
+      <div class="site-footer-social-inline">
+        <a href="mailto:hello@tryintera.com">hello@tryintera.com</a>
+      </div>
+    </div>
+  </div>
+  <div class="site-footer-wordmark" aria-hidden="true">Intera</div>
+</footer>
+
+<script src="../script.js"></script>
+</body>
+</html>
+

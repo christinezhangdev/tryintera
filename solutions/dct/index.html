@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>DCT - Clinical Trials | Intera</title>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600;9..40,700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,500;8..60,600;8..60,700&family=JetBrains+Mono:wght@400;500&family=Lora:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+<link rel="icon" type="image/png" href="/favicon.png">
+<link rel="stylesheet" href="../../styles.css?v=4">
+</head>
+
+<body class="landing-ghibli hero-scale clinical-trials-light">
+<nav class="nav-scale nav-visible" id="main-nav">
+  <a href="/" class="nav-scale-logo">
+    <img src="../../images/logo-intera.png" alt="" width="auto" height="40">
+    <span class="nav-scale-wordmark">Intera</span>
+  </a>
+  <div class="nav-scale-center">
+    <div class="nav-scale-dd">
+      <a href="#" class="nav-scale-link nav-scale-link-active nav-scale-link-dd">Products &amp; Solutions <span class="nav-scale-chevron">↓</span></a>
+      <div class="nav-scale-dropdown">
+        <a href="/solutions/clinical-trials/" class="nav-scale-dropdown-item">Clinical Trials</a>
+        <a href="/solutions/dct/" class="nav-scale-dropdown-item">DCT</a>
+        <a href="/solutions/commercial-pharma/" class="nav-scale-dropdown-item">Commercial Pharma</a>
+      </div>
+    </div>
+    <div class="nav-scale-dd">
+      <a href="#" class="nav-scale-link nav-scale-link-dd">Resources <span class="nav-scale-chevron">↓</span></a>
+      <div class="nav-scale-dropdown">
+        <a href="/resources/methodology/" class="nav-scale-dropdown-item">Methodology</a>
+        <a href="/resources/ethics/" class="nav-scale-dropdown-item">Ethics</a>
+      </div>
+    </div>
+<a href="/team/" class="nav-scale-link">Team</a>
+  </div>
+  <a href="/early-access/" class="nav-scale-cta" id="nav-cta-early-access">Request Early Access</a>
+  <button id="mobile-menu-btn" aria-label="Open menu">
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
+</nav>
+
+<div id="mobile-overlay">
+  <button id="mobile-close-btn">✕</button>
+  <div class="mobile-overlay-menu">
+    <a href="/">Home</a>
+    <a href="/solutions/clinical-trials/">Clinical Trials</a>
+    <a href="/solutions/commercial-pharma/">Commercial Pharma</a>
+    <a href="/solutions/dct/">Decentralized Trials</a>
+    <a href="/resources/methodology/">Methodology</a>
+    <a href="/resources/ethics/">Ethics</a>
+    <a href="/team/">Team</a>
+    <a href="/early-access/">Request Early Access</a>
+  </div>
+</div>
+
+<!-- SECTION 1  - HERO -->
+<section class="dct-hero" id="demo">
+  <img src="../../images/dct-hero-bg.png" alt="" class="dct-hero-bg" aria-hidden="true">
+  <div class="dct-hero-overlay"></div>
+  <div class="dct-hero-overlay dct-hero-overlay-tint"></div>
+  <div class="dct-hero-inner">
+    <p class="dct-eyebrow">ENSEMBLE · DECENTRALIZED TRIALS</p>
+    <h1 class="dct-hero-headline">
+      Patient intelligence is more critical<br>
+      <span class="dct-hero-highlight">when there is no site coordinator.</span>
+    </h1>
+    <p class="dct-hero-body">DCT removes the human safety net. Site coordinators catch early disengagement signals in person. In remote trials, those signals have nowhere to land unless the system is designed to receive them.</p>
+    <a href="/early-access/" class="argus-cta">Request Early Access</a>
+  </div>
+  <hr class="dct-hero-rule">
+</section>
+
+<!-- SECTION 2  - THE PROBLEM (dark, 2x3 grid) -->
+<section class="dct-section dct-problem-section">
+  <p class="dct-eyebrow">THE PROBLEM</p>
+  <h2 class="dct-problem-headline">DCT infrastructure is not the bottleneck. Patient behavior with that infrastructure is.</h2>
+  <div class="dct-problem-grid">
+    <div class="dct-problem-card">
+      <p class="dct-problem-label">TECH FRICTION</p>
+      <p class="dct-problem-desc">App onboarding, log-ins, Bluetooth pairing, and notification fatigue quietly erode completion and visit adherence. Patients don't report the friction. They simply stop engaging.</p>
+      <p class="dct-problem-impl">The dropout signal is behavioral, not technical. It exists before a single patient enrolls.</p>
+    </div>
+    <div class="dct-problem-card">
+      <p class="dct-problem-label">SEGMENT-SPECIFIC DROPOUT</p>
+      <p class="dct-problem-desc">Digital literacy, caregiving burden, language, device access, and income all shift how patients experience the same DCT workflow. A design that retains urban, high-literacy adults fails outright for older, low-income, or caregiving-heavy segments.</p>
+      <p class="dct-problem-impl">Average retention projections mask the segments that will actually ghost the trial.</p>
+    </div>
+    <div class="dct-problem-card">
+      <p class="dct-problem-label">SLOW AND EXPENSIVE UX RESEARCH</p>
+      <p class="dct-problem-desc">Human factors labs and small UX pilots surface some friction, but they are expensive, slow, and rarely segment-representative at scale. By the time findings are available, the protocol is already locked.</p>
+      <p class="dct-problem-impl">Behavioral simulation before protocol lock is faster and cheaper than fixing dropout after it occurs.</p>
+    </div>
+    <div class="dct-problem-card">
+      <p class="dct-problem-label">FEASIBILITY TOOLS MISS BEHAVIOR</p>
+      <p class="dct-problem-desc">Current DCT planning tools capture protocol complexity and logistics. None of them model behavioral friction with the tech stack itself.</p>
+      <p class="dct-problem-impl">The protocol is feasible on paper. The DCT platform is robust. Patients still ghost the trial.</p>
+    </div>
+    <div class="dct-problem-card">
+      <p class="dct-problem-label">NO HUMAN SAFETY NET</p>
+      <p class="dct-problem-desc">In site-based trials, coordinators catch early disengagement in person. In remote trials, those signals have nowhere to land unless the system is designed to read them.</p>
+      <p class="dct-problem-impl">Ensemble is that system.</p>
+    </div>
+    <div class="dct-problem-card dct-problem-card-empty" aria-hidden="true"></div>
+  </div>
+</section>
+
+<!-- SECTION 3  - WHAT INTERA DOES (light) -->
+<section class="dct-section dct-what-section">
+  <p class="dct-eyebrow dct-eyebrow-purple">ENSEMBLE FOR DCT</p>
+  <h2 class="dct-what-headline">Simulate how your patient population will behave with your DCT stack. Before you lock the protocol.</h2>
+  <p class="dct-what-subhead">Ensemble generates synthetic patient populations calibrated to real behavioral and clinical data, then simulates how those patients respond to your specific onboarding flows, ePRO schedules, device requirements, and remote visit cadence.</p>
+  <div class="dct-grid-rows">
+    <div class="dct-grid-row">
+      <div class="dct-grid-left">
+        <h3 class="dct-grid-label">Onboarding Friction Prediction</h3>
+      </div>
+      <div class="dct-grid-right">
+        <p class="dct-grid-desc">Identify which patient segments will abandon onboarding and at which specific step, such as app login, Bluetooth pairing, consent flow, or the first ePRO. Model the friction before the protocol is locked.</p>
+        <p class="dct-grid-impl">Simplify the flow for the segments that need it. Before a single patient is enrolled.</p>
+      </div>
+    </div>
+    <div class="dct-grid-row">
+      <div class="dct-grid-left">
+        <h3 class="dct-grid-label">ePRO Adherence Forecasting</h3>
+      </div>
+      <div class="dct-grid-right">
+        <p class="dct-grid-desc">Predict completion curves by segment for your specific ePRO or eCOA schedule. Identify whether late-evening tasks, assessment frequency, or notification cadence will drive abandonment in specific demographic or socioeconomic groups. Spanish-preferring caregivers show significantly lower predicted completion under standard schedules; Ensemble models what changes matter.</p>
+        <p class="dct-grid-impl">Adjust the schedule before the data gap is real.</p>
+      </div>
+    </div>
+    <div class="dct-grid-row">
+      <div class="dct-grid-left">
+        <h3 class="dct-grid-label">Device and Wearable Continuation</h3>
+      </div>
+      <div class="dct-grid-right">
+        <p class="dct-grid-desc">For trials requiring wearables or home monitoring devices, predict what proportion of patients will maintain device use past 30 days by age, digital literacy, and income segment. Model whether device complexity warrants human support at first visit for specific segments.</p>
+        <p class="dct-grid-impl">Device dropout is behavioral, not technical. Ensemble treats it accordingly.</p>
+      </div>
+    </div>
+    <div class="dct-grid-row">
+      <div class="dct-grid-left">
+        <h3 class="dct-grid-label">Remote Recruitment Optimization</h3>
+      </div>
+      <div class="dct-grid-right">
+        <p class="dct-grid-desc">Patients who will engage with a fully remote protocol have different behavioral profiles than patients who require in-person support. Optimize recruitment messaging and channel strategy for the population that will actually complete, not the broadest eligible population.</p>
+        <p class="dct-grid-impl">Match recruitment to retention profile. Not eligibility criteria alone.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SECTION 4  - SAMPLE USE CASES (light, accordion) -->
+<section class="dct-section dct-use-section">
+  <p class="dct-eyebrow">USE CASES</p>
+  <h2 class="dct-use-headline">The questions Ensemble is built to answer.</h2>
+  <div class="dct-accordion">
+    <div class="dct-accordion-item is-open">
+      <button type="button" class="dct-accordion-toggle">
+        <span class="dct-accordion-label">CNS DCT with heavy ePRO burden</span>
+        <span class="dct-accordion-icon">−</span>
+      </button>
+      <div class="dct-accordion-panel">
+        <div class="dct-accordion-panel-inner">
+          <div class="dct-accordion-desc">
+            Which patient segments are most likely to fail the current assessment schedule? Ensemble models completion curves by segment for your specific ePRO design, identifying whether late-evening tasks, assessment frequency, or notification cadence drives abandonment. Output is a segment-level retention forecast with specific protocol modification options and predicted lift per change.
+          </div>
+          <div class="dct-accordion-impl">
+            Protocol decisions made with retention data, not intuition.
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="dct-accordion-item">
+      <button type="button" class="dct-accordion-toggle">
+        <span class="dct-accordion-label">Cardiometabolic DCT with wearables</span>
+        <span class="dct-accordion-icon">+</span>
+      </button>
+      <div class="dct-accordion-panel">
+        <div class="dct-accordion-panel-inner">
+          <div class="dct-accordion-desc">
+            What proportion of patients will realistically maintain device use past 30 days by age and digital literacy? Is it worth introducing nurse home visits for a specific high-risk segment versus accepting higher dropout? Ensemble models device continuation by segment and quantifies the retention impact of support interventions before any resource commitment is made.
+          </div>
+          <div class="dct-accordion-impl">
+            Device and visit design decisions grounded in predicted segment behavior.
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="dct-accordion-item">
+      <button type="button" class="dct-accordion-toggle">
+        <span class="dct-accordion-label">Any DCT requiring an app</span>
+        <span class="dct-accordion-icon">+</span>
+      </button>
+      <div class="dct-accordion-panel">
+        <div class="dct-accordion-panel-inner">
+          <div class="dct-accordion-desc">
+            Where in the actual onboarding flow do we see predicted abandonment spikes? Do we need dual-mode access for certain segments to avoid losing them on Day 1? Which notification cadence and channel mix moves adherence for the specific segments in this trial? Ensemble answers each of these before a single patient downloads the app.
+          </div>
+          <div class="dct-accordion-impl">
+            Design the app experience around patients who will actually complete it.
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SECTION 5  - WHY DIFFERENT (dark, three-column stats) -->
+<section class="dct-section dct-why-section">
+  <p class="dct-eyebrow dct-eyebrow-purple">DIFFERENTIATION</p>
+  <h2 class="dct-why-headline">Why this is different from existing DCT tools.</h2>
+  <div class="dct-diff-row">
+    <div class="dct-diff-col">
+      <div class="dct-diff-anchor">Behavior</div>
+      <div class="dct-diff-subhead">Not logistics.</div>
+      <div class="dct-diff-desc">Existing DCT platforms handle data capture, site activation, and logistics. Ensemble focuses on the behavioral failure points that sit on top of that stack, the layer those tools were never designed to model.</div>
+    </div>
+    <div class="dct-diff-col">
+      <div class="dct-diff-anchor">Healthcare</div>
+      <div class="dct-diff-subhead">Not consumer data.</div>
+      <div class="dct-diff-desc">Synthetic populations are calibrated to healthcare-specific behaviors, including trial participation, tech tolerance under illness and income constraints, adherence under caregiving burden, and protocol fatigue.</div>
+    </div>
+    <div class="dct-diff-col">
+      <div class="dct-diff-anchor">Segment</div>
+      <div class="dct-diff-subhead">Not average patient.</div>
+      <div class="dct-diff-desc">All Ensemble outputs are segmented. You see that a design which works for urban, high-literacy adults fails outright for older, low-income, or caregiving-heavy segments, and you see specifically what changes matter for each group.</div>
+    </div>
+  </div>
+</section>
+
+<!-- SECTION 6  - CTA BAND -->
+<section class="simple-cta-band" id="cta">
+  <div class="simple-cta-row">
+    <a href="/early-access/" class="simple-cta-card simple-cta-primary">
+      <span class="simple-cta-label">Request Early Access</span>
+      <span class="simple-cta-arrow">→</span>
+    </a>
+    <a href="mailto:hello@tryintera.com" class="simple-cta-card simple-cta-secondary">
+      <span class="simple-cta-label">Contact us at hello@tryintera.com</span>
+      <span class="simple-cta-arrow">→</span>
+    </a>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="site-footer-inner">
+    <div class="site-footer-top">
+      <div class="site-footer-col site-footer-market">
+        <h3 class="site-footer-heading">Market</h3>
+        <button class="site-footer-market-pill" type="button">
+          <span class="site-footer-market-flag">🇺🇸</span>
+          <span>United States</span>
+          <span class="site-footer-market-arrow">→</span>
+        </button>
+      </div>
+      <div class="site-footer-col">
+        <h3 class="site-footer-heading">Intera</h3>
+        <a href="/research/">Research</a>
+        <a href="/resources/methodology/">Methodology</a>
+        <a href="/resources/ethics/">Ethics</a>
+      </div>
+      <div class="site-footer-col">
+        <h3 class="site-footer-heading">Solutions</h3>
+        <a href="/solutions/clinical-trials/">Clinical Trials</a>
+        <a href="/solutions/dct/">Decentralized Trials</a>
+        <a href="/solutions/commercial-pharma/">Commercial Pharma</a>
+      </div>
+      <div class="site-footer-col">
+        <h3 class="site-footer-heading">Company</h3>
+        <a href="/team/">Team</a>
+        <a href="/early-access/">Request Early Access</a>
+        <a href="mailto:hello@tryintera.com">Contact</a>
+      </div>
+      <div class="site-footer-col site-footer-col-small">
+        <h3 class="site-footer-heading">Follow</h3>
+        <div class="site-footer-social-inline">
+          <a href="https://www.linkedin.com" target="_blank" rel="noopener">LinkedIn</a>
+          <a href="https://x.com" target="_blank" rel="noopener">X</a>
+        </div>
+      </div>
+    </div>
+    <div class="site-footer-bottom">
+      <p class="site-footer-meta">© 2026 Intera · Synthetic populations for healthcare decisions.</p>
+      <div class="site-footer-social-inline">
+        <a href="mailto:hello@tryintera.com">hello@tryintera.com</a>
+      </div>
+    </div>
+  </div>
+  <div class="site-footer-wordmark" aria-hidden="true">Intera</div>
+</footer>
+
+
+<script src="../../script.js"></script>
+
+</body>
+</html>
