@@ -1000,7 +1000,7 @@ https://www.unlearn.ai/.dct-grid-label{
   padding:56px 24px 80px;
 }
 .team-section-members .team-grid-title{
-  font-family:'DM Sans',sans-serif;
+  font-family:'Lora',serif;
   font-size:22px;
   font-weight:600;
   color:#1a1535;
@@ -1088,14 +1088,14 @@ https://www.unlearn.ai/.dct-grid-label{
   text-align:center;
 }
 .team-name{
-  font-family:'DM Sans',sans-serif;
+  font-family:'Lora',serif;
   font-size:15px;
   font-weight:600;
   color:#1a1535;
   margin:0 0 4px;
 }
 .team-title{
-  font-family:'DM Sans',sans-serif;
+  font-family:'Lora',serif;
   font-size:13px;
   font-weight:400;
   text-transform:none;
@@ -2221,6 +2221,131 @@ body.clinical-trials-light .cta-section .cta-form textarea::placeholder{ color:r
   .products-entry-inner{ grid-template-columns:1fr; gap:24px; }
   .products-name{ font-size:72px; }
   .products-entry{ padding:64px 0; }
+}
+
+/* ===== Path diagram (Learn → Organize → Intera → Deploy → Optimize) ===== */
+.path-diagram-section{
+  background:#e8e3f5;
+  padding:80px 80px 100px;
+  position:relative;
+}
+.path-diagram-inner{
+  max-width:1200px;
+  margin:0 auto;
+}
+.path-diagram-eyebrow{
+  font-family:'DM Sans',sans-serif;
+  font-size:11px;
+  text-transform:uppercase;
+  letter-spacing:0.18em;
+  color:#00BCD4;
+  margin:0 0 16px;
+}
+.path-diagram-title{
+  font-family:'Lora',serif;
+  font-size:clamp(28px,4vw,40px);
+  font-weight:400;
+  color:#1a1535;
+  margin:0 0 64px;
+}
+.path-diagram-visual{
+  position:relative;
+  width:100%;
+  max-width:680px;
+  margin:0 auto 80px;
+  min-height:320px;
+}
+.path-diagram-svg{
+  width:100%;
+  height:auto;
+}
+.path-line{ stroke-linecap:round; stroke-linejoin:round; }
+.path-dot{
+  filter:drop-shadow(0 0 6px rgba(0,188,212,0.6));
+}
+.path-dot-3, .path-dot-4{
+  filter:drop-shadow(0 0 6px rgba(155,111,212,0.6));
+}
+.path-nodes{
+  position:absolute;
+  inset:0;
+  pointer-events:none;
+}
+.path-node{
+  position:absolute;
+  font-family:'DM Sans',sans-serif;
+  font-size:14px;
+  font-weight:600;
+  color:#1a1535;
+  padding:12px 20px;
+  border:1px solid rgba(91,63,212,0.25);
+  border-radius:10px;
+  background:rgba(255,255,255,0.85);
+  backdrop-filter:blur(8px);
+  box-shadow:0 2px 12px rgba(26,21,53,0.06);
+  white-space:nowrap;
+}
+.path-node-ingest{ left:0; top:0; transform:translate(0,0); }
+.path-node-simulate{ left:0; bottom:0; transform:translate(0,0); }
+.path-node-intera{ left:50%; top:50%; transform:translate(-50%,-50%); }
+.path-node-forecast{ right:0; top:0; transform:translate(0,0); }
+.path-node-calibrate{ right:0; bottom:0; transform:translate(0,0); }
+.path-node{ display:inline-flex; align-items:center; gap:8px; }
+.path-node-icon{ display:inline-flex; flex-shrink:0; width:18px; height:18px; }
+.path-node-icon svg{ width:100%; height:100%; color:#5b3fd4; }
+.path-copy-title{ display:inline-flex; align-items:center; gap:8px; }
+.path-copy-icon{ display:inline-flex; flex-shrink:0; width:20px; height:20px; }
+.path-copy-icon svg{ width:100%; height:100%; color:#5b3fd4; }
+.path-node-intera-logo{
+  width:22px;
+  height:22px;
+  object-fit:contain;
+  flex-shrink:0;
+}
+.path-node-center{
+  padding:18px 32px;
+  font-size:18px;
+  border:1px solid rgba(0,188,212,0.5);
+  box-shadow:0 0 24px rgba(0,188,212,0.2), 0 0 48px rgba(155,111,212,0.12);
+  background:linear-gradient(135deg,rgba(255,255,255,0.95),rgba(230,220,250,0.9));
+  color:#1a1535;
+  animation:pathCenterGlow 3s ease-in-out infinite;
+}
+@keyframes pathCenterGlow{
+  0%,100%{ box-shadow:0 0 24px rgba(0,188,212,0.25), 0 0 48px rgba(155,111,212,0.15); }
+  50%{ box-shadow:0 0 36px rgba(0,188,212,0.4), 0 0 64px rgba(155,111,212,0.2); }
+}
+.path-diagram-copy{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:32px;
+  max-width:1200px;
+  margin:0 auto;
+}
+.path-copy-col{
+  font-family:'DM Sans',sans-serif;
+}
+.path-copy-title{
+  font-family:'Lora',serif;
+  font-size:16px;
+  font-weight:600;
+  color:#1a1535;
+  margin:0 0 12px;
+}
+.path-copy-col p{
+  font-size:14px;
+  line-height:1.65;
+  color:#6b6490;
+  margin:0;
+}
+
+@media (max-width:900px){
+  .path-diagram-section{ padding:56px 24px 80px; }
+  .path-diagram-title{ margin-bottom:48px; }
+  .path-diagram-visual{ min-height:260px; margin-bottom:48px; }
+  .path-node{ font-size:13px; padding:10px 16px; }
+  .path-node-center{ font-size:16px; padding:14px 24px; }
+  .path-diagram-copy{ grid-template-columns:1fr; gap:24px; }
 }
 
 /* ===== Mission two-column section ===== */

@@ -6,7 +6,7 @@
 <title>Intera - Digital Twins</title>
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600;9..40,700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,500;8..60,600;8..60,700&family=JetBrains+Mono:wght@400;500&family=Lora:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
 <link rel="icon" type="image/png" href="/favicon.png">
-<link rel="stylesheet" href="styles.css?v=4">
+<link rel="stylesheet" href="styles.css?v=6">
 </head>
 
 <body class="landing-ghibli hero-scale">
@@ -128,6 +128,92 @@
       Healthcare loses hundreds of billions of dollars annually because nobody can predict what patients will actually do. Intera is building the intelligence layer that answers that question.
       <span class="belief-fade">Before the trial begins, before the patient discontinues, before the readmission occurs.</span>
     </p>
+  </div>
+</section>
+
+<!-- Path diagram: Ingest → Simulate → Intera → Forecast → Calibrate -->
+<section class="path-diagram-section" id="platform">
+  <div class="path-diagram-inner">
+    <p class="path-diagram-eyebrow">97% PREDICTIVE ACCURACY · HOW IT WORKS</p>
+    <h2 class="path-diagram-title">Patient intelligence, end to end.</h2>
+    <div class="path-diagram-visual">
+      <svg class="path-diagram-svg" viewBox="0 0 680 320" preserveAspectRatio="xMidYMid meet">
+        <defs>
+          <linearGradient id="pathGlowGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#00BCD4" stop-opacity="0.6"/>
+            <stop offset="50%" stop-color="#9B6FD4" stop-opacity="0.4"/>
+            <stop offset="100%" stop-color="#00BCD4" stop-opacity="0.6"/>
+          </linearGradient>
+          <filter id="pathGlow">
+            <feGaussianBlur stdDeviation="4" result="blur"/>
+            <feMerge>
+              <feMergeNode in="blur"/>
+              <feMergeNode in="SourceGraphic"/>
+            </feMerge>
+          </filter>
+          <marker id="pathArrow" markerWidth="6" markerHeight="6" refX="3" refY="3" orient="auto">
+            <circle cx="3" cy="3" r="1.5" fill="#5b3fd4"/>
+          </marker>
+        </defs>
+        <!-- Curved paths: Ingest, Simulate → Intera -->
+        <path class="path-line path-in-1" d="M 120 70 Q 200 100 260 140" fill="none" stroke="rgba(91,63,212,0.35)" stroke-width="1.5"/>
+        <path class="path-line path-in-2" d="M 120 250 Q 200 220 260 180" fill="none" stroke="rgba(91,63,212,0.35)" stroke-width="1.5"/>
+        <!-- Intera → Forecast, Calibrate -->
+        <path class="path-line path-out-1" d="M 420 140 Q 480 100 560 70" fill="none" stroke="rgba(91,63,212,0.35)" stroke-width="1.5"/>
+        <path class="path-line path-out-2" d="M 420 180 Q 480 220 560 250" fill="none" stroke="rgba(91,63,212,0.35)" stroke-width="1.5"/>
+        <!-- Animated flow dots -->
+        <circle class="path-dot path-dot-1" r="3" fill="#00BCD4">
+          <animateMotion dur="2.5s" repeatCount="indefinite" path="M 120 70 Q 200 100 260 140"/>
+        </circle>
+        <circle class="path-dot path-dot-2" r="3" fill="#00BCD4">
+          <animateMotion dur="2.8s" repeatCount="indefinite" path="M 120 250 Q 200 220 260 180" begin="0.4s"/>
+        </circle>
+        <circle class="path-dot path-dot-3" r="3" fill="#9B6FD4">
+          <animateMotion dur="2.5s" repeatCount="indefinite" path="M 420 140 Q 480 100 560 70" begin="0.2s"/>
+        </circle>
+        <circle class="path-dot path-dot-4" r="3" fill="#9B6FD4">
+          <animateMotion dur="2.8s" repeatCount="indefinite" path="M 420 180 Q 480 220 560 250" begin="0.6s"/>
+        </circle>
+      </svg>
+      <!-- Node containers (positioned over SVG) -->
+      <div class="path-nodes">
+        <div class="path-node path-node-ingest">
+          <span class="path-node-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="4" width="16" height="5" rx="1"/><rect x="4" y="10" width="16" height="5" rx="1"/><rect x="4" y="16" width="16" height="5" rx="1"/></svg></span>
+          1. Ingest
+        </div>
+        <div class="path-node path-node-simulate">
+          <span class="path-node-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><polygon points="5 3 19 12 5 21 5 3"/></svg></span>
+          2. Simulate
+        </div>
+        <div class="path-node path-node-intera path-node-center"><img src="images/intera-path-logo.png" alt="" class="path-node-intera-logo" width="22" height="22">Intera</div>
+        <div class="path-node path-node-forecast">
+          <span class="path-node-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg></span>
+          3. Forecast
+        </div>
+        <div class="path-node path-node-calibrate">
+          <span class="path-node-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg></span>
+          4. Calibrate
+        </div>
+      </div>
+    </div>
+    <div class="path-diagram-copy">
+      <div class="path-copy-col">
+        <h3 class="path-copy-title"><span class="path-copy-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="4" width="16" height="5" rx="1"/><rect x="4" y="10" width="16" height="5" rx="1"/><rect x="4" y="16" width="16" height="5" rx="1"/></svg></span>1. Ingest</h3>
+        <p>Population-level demographic, clinical, psychosocial, and behavioral data structured across four conditioning layers to build synthetic patient populations calibrated to any target population or therapeutic context.</p>
+      </div>
+      <div class="path-copy-col">
+        <h3 class="path-copy-title"><span class="path-copy-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><polygon points="5 3 19 12 5 21 5 3"/></svg></span>2. Simulate</h3>
+        <p>Cohorts run through any program, protocol, or care pathway. Behavioral factors modeled at the patient segment level: visit burden, institutional trust, transportation barriers, side-effect tolerance, health literacy, and financial pressure.</p>
+      </div>
+      <div class="path-copy-col">
+        <h3 class="path-copy-title"><span class="path-copy-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg></span>3. Forecast</h3>
+        <p>Risk-stratified predictions generated before resources are committed: engagement probability, dropout timing, adherence failure risk, and intervention response, across clinical trial design, commercial launch, and care delivery.</p>
+      </div>
+      <div class="path-copy-col">
+        <h3 class="path-copy-title"><span class="path-copy-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg></span>4. Calibrate</h3>
+        <p>Predictions benchmarked against real-world outcomes. Discrepancies fed back into conditioning to improve model accuracy across therapeutic areas, patient populations, and program designs over time.</p>
+      </div>
+    </div>
   </div>
 </section>
 
